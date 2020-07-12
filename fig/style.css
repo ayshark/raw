@@ -25,6 +25,16 @@ body {
     animation: blink 1s step-start infinite;
 }
 
+@-moz-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #6C63FF, 0 0 40px #6C63FF, 0 0 50px #6C63FF, 0 0 60px #6C63FF, 0 0 70px #6C63FF;
+      }
+      /*0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, */
+      to {
+        text-shadow: 0 0 80px #6C63FF;
+      }
+}
+
 @-webkit-keyframes glow {
     from {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #6C63FF, 0 0 40px #6C63FF, 0 0 50px #6C63FF, 0 0 60px #6C63FF, 0 0 70px #6C63FF;
@@ -34,6 +44,21 @@ body {
         text-shadow: 0 0 80px #6C63FF;
       }
 }
+
+@-moz-keyframes blink {
+    
+    50% {
+        opacity: 0.0;
+      }
+
+      /* from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    } */
+}
+
 
 @-webkit-keyframes blink {
     
